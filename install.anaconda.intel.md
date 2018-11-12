@@ -8,7 +8,7 @@ email: carlos.fas@gmail.com
 Brief Description
 ------------------
 
-Describe stepts to install and manage intel enviorements in anaconda.
+Describe the steps to install and manage intel enviorements in anaconda.
 The choice here after hours of problems due to conflits was install:
 
  1. Install Anaconda
