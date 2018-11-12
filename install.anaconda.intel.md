@@ -1,21 +1,23 @@
+How to Install Intel Python libs on Anaconda Enviroment
+========================================================
+
 Author: Carlos Felipe C. Alves
 email: carlos.fas@gmail.com
-date: 7/nov/2018
 
-DRAFT
 
 Brief Description
-==================
+------------------
 
 Describe stepts to install and manage intel enviorements in anaconda.
 The choice here after hours of problems due to conflits was install:
 
  1. Install Anaconda
- 2.  Install intelpython3_core lib as basic and pure intel env (idp)
- 3.  Disable automatic updates
- 4.  Create (idp3) with intel packages
- 5.  Create (idp3_bmap) by cloning (idp3)
-	  Install all other packages in this env using as many  intel libs as possible using conda 
+ 2. Install intelpython3_core lib as basic and pure intel env (idp)
+ 3. Disable automatic updates
+ 4. Create (idp3) with intel packages
+ 5. Create (idp3_bmap) by cloning (idp3)
+	  Install all other packages in this env using as many  intel libs as possible using conda
+ 6. Config channels
 
 
 
@@ -89,10 +91,10 @@ Edit ` .condarc` of the installation directory and your home dir
 ~~~
     conda config --set auto_update_conda false
 
-    carlos@carlos-300E5M-300E5L:~$ which conda
+    $ which conda
     /home/carlos/anaconda3/bin/conda
 
-    carlos@carlos-300E5M-300E5L:~$ nano /home/carlos/anaconda3/bin/.condarc 
+    $ nano /home/carlos/anaconda3/bin/.condarc 
 ~~~
  
 Add lines
@@ -133,16 +135,12 @@ https://anaconda.org/intel/scipy
     conda create -n idp3_bmap --clone idp3
     source activate idp3_bmap
     conda install basemap proj4 netCDF4 -c conda-forge 
-    conda install ncl -c conda-forge
-
-    conda create -n ncl_stable -c conda-forge ncl 
 ~~~
 
 https://anaconda.org/conda-forge/netcdf4
 
 
-Aditional Config
-=================
+## 6. Config channels
 
 ## Install Intel and Additional Conda Channels
 
@@ -163,11 +161,11 @@ Checking
 
 ~~~
 
-    (idp3_bmap) carlos@note$ conda config --get channels
+    (idp3_bmap) $ conda config --get channels
     --add channels 'defaults'   # lowest priority
     --add channels 'conda-forge'   # highest priority
 
-    (idp3_bmap) carlos@note$ conda config --env --get channels
+    (idp3_bmap) $ conda config --env --get channels
     --add channels 'intel'   # lowest priority
 
     conda config --show-sources
@@ -184,9 +182,7 @@ https://stackoverflow.com/questions/39558316/how-can-i-remove-a-url-channel-from
 
 
 
-
-
-#### refs
+#### References
 
 https://anaconda.org/intel/repo
 https://conda.io/docs/user-guide/configuration/use-condarc.html#channel-locations-channels
@@ -301,7 +297,7 @@ conda config --set update_dependencies False
 
 ## Status
 ~~~
-(idp_bmap) carlos@carlos-300E5M-300E5L:~$ conda info
+(idp_bmap) $ conda info
 
      active environment : idp_bmap
     active env location : /home/carlos/anaconda3/envs/idp_bmap
@@ -335,22 +331,22 @@ conda config --set update_dependencies False
              netrc file : None
            offline mode : False
 
-(idp_bmap) carlos@carlos-300E5M-300E5L:~$ cat /home/carlos/anaconda3/envs/idp_bmap/.condarc
+(idp_bmap) $ cat /home/carlos/anaconda3/envs/idp_bmap/.condarc
 channels:
   - intel
-(idp_bmap) carlos@carlos-300E5M-300E5L:~$ cat /home/carlos/.condarc
+(idp_bmap) $ cat /home/carlos/.condarc
 channels:
   - conda-forge
   - defaults
 ssl_verify: true
 
-(idp_bmap) carlos@carlos-300E5M-300E5L:~$ conda config --env --get channels
+(idp_bmap) $ conda config --env --get channels
 --add channels 'intel'   # lowest priority
-(idp_bmap) carlos@carlos-300E5M-300E5L:~$ conda config --get channels
+(idp_bmap) $ conda config --get channels
 --add channels 'defaults'   # lowest priority
 --add channels 'conda-forge'   # highest priority
 
-(idp_bmap) carlos@carlos-300E5M-300E5L:~$ conda list | grep conda-forge
+(idp_bmap) $ conda list | grep conda-forge
 basemap                   1.2.0            py36h50ae964_0    conda-forge
 bokeh                     0.13.0                py36_1000    conda-forge
 click                     7.0                        py_0    conda-forge
@@ -384,7 +380,7 @@ Primary install
 
 
 ~~~
-carlos@carlos-300E5M-300E5L:~$ conda env list
+$ conda env list
 # conda environments:
 #
 base                  *  /home/carlos/anaconda3
@@ -396,7 +392,7 @@ orange                   /home/carlos/anaconda3/envs/orange
 py2                      /home/carlos/anaconda3/envs/py2
 
 
-(base) carlos@carlos-300E5M-300E5L:~$ conda info
+(base) $ conda info
 
      active environment : base
     active env location : /home/carlos/anaconda3
@@ -407,7 +403,7 @@ py2                      /home/carlos/anaconda3/envs/py2
     conda-build version : 3.10.5
          python version : 3.6.5.final.0
 
-(idp) carlos@carlos-300E5M-300E5L:~$ conda info
+(idp) $ conda info
 
      active environment : idp
     active env location : /home/carlos/anaconda3/envs/idp
