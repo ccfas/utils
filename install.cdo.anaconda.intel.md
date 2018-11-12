@@ -1,8 +1,8 @@
 
 # How to install CDO (Climate Data Operator) in Intel Anaconda enviroment
 
-Author: Carlos Felipe C. Alves
-email: carlos.fas@gmail.com
+- Author: Carlos Felipe C. Alves
+- email: carlos.fas@gmail.com
 
 
 ## Brief Description
@@ -161,9 +161,9 @@ GRIB_API library version : 2.8.2
 
 #### References
 
-https://code.mpimet.mpg.de/projects/cdo/wiki/Anaconda
-https://code.mpimet.mpg.de/projects/cdo/files
-https://code.mpimet.mpg.de/boards/2/topics/6803?r=6808
+- https://code.mpimet.mpg.de/projects/cdo/wiki/Anaconda
+- https://code.mpimet.mpg.de/projects/cdo/files
+- https://code.mpimet.mpg.de/boards/2/topics/6803?r=6808
 
 
 
