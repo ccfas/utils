@@ -1,8 +1,8 @@
 How to Install Intel Python libs on Anaconda Enviroment
 ========================================================
 
-Author: Carlos Felipe C. Alves
-email: carlos.fas@gmail.com
+- Author: Carlos Felipe C. Alves
+- email: carlos.fas@gmail.com
 
 
 Brief Description
@@ -109,8 +109,8 @@ The  `.condarc` file may also be located in the root environment, in which case 
 When `auto_update_conda` is `True`, conda updates itself any time a user updates or installs a package in the root environment. 
 
 
-https://conda.io/docs/user-guide/configuration/use-condarc.html#disable-updating-of-dependencies-update-dependencies
-https://conda.io/docs/user-guide/configuration/use-condarc.html#channel-locations-channels
+- https://conda.io/docs/user-guide/configuration/use-condarc.html#disable-updating-of-dependencies-update-dependencies
+- https://conda.io/docs/user-guide/configuration/use-condarc.html#channel-locations-channels
 
 
 ## 4. Create (idp3) with intel packages
@@ -123,10 +123,10 @@ https://conda.io/docs/user-guide/configuration/use-condarc.html#channel-location
 ~~~
 
 
-https://anaconda.org/intel/repo
-https://anaconda.org/intel/pandas
-https://anaconda.org/intel/scikit-learn
-https://anaconda.org/intel/scipy
+- https://anaconda.org/intel/repo
+- https://anaconda.org/intel/pandas
+- https://anaconda.org/intel/scikit-learn
+- https://anaconda.org/intel/scipy
 
 
 ## 5. Create (idp3_bmap) by cloning (idp3)
@@ -172,10 +172,10 @@ Checking
 ~~~
 
 
-https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda
-https://conda.io/docs/user-guide/tasks/manage-channels.html
-https://conda.io/docs/user-guide/configuration/use-condarc.html#channel-locations-channels
-https://stackoverflow.com/questions/39558316/how-can-i-remove-a-url-channel-from-anaconda
+- https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda
+- https://conda.io/docs/user-guide/tasks/manage-channels.html
+- https://conda.io/docs/user-guide/configuration/use-condarc.html#channel-locations-channels
+- https://stackoverflow.com/questions/39558316/how-can-i-remove-a-url-channel-from-anaconda
 
 
 
@@ -184,12 +184,12 @@ https://stackoverflow.com/questions/39558316/how-can-i-remove-a-url-channel-from
 
 #### References
 
-https://anaconda.org/intel/repo
-https://conda.io/docs/user-guide/configuration/use-condarc.html#channel-locations-channels
-https://conda.io/docs/user-guide/configuration/admin-multi-user-install.html#admin-inst
-https://conda.io/docs/user-guide/tasks/manage-environments.html
-https://stackoverflow.com/questions/40616381/can-i-add-a-channel-to-a-specific-conda-environment
-https://medium.freecodecamp.org/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c
+- https://anaconda.org/intel/repo
+- https://conda.io/docs/user-guide/configuration/use-condarc.html#channel-locations-channels
+- https://conda.io/docs/user-guide/configuration/admin-multi-user-install.html#admin-inst
+- https://conda.io/docs/user-guide/tasks/manage-environments.html
+- https://stackoverflow.com/questions/40616381/can-i-add-a-channel-to-a-specific-conda-environment
+- https://medium.freecodecamp.org/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c
 
 
 
@@ -213,20 +213,20 @@ The installation of new packages will use anaconda intel channel as main source 
  
 Anaconda3-5.2.0-Linux-x86_64.sh
 
-https://docs.anaconda.com/anaconda/packages/oldpkglists/
-https://linuxize.com/post/how-to-install-anaconda-on-ubuntu-18-04/
+- https://docs.anaconda.com/anaconda/packages/oldpkglists/
+- https://linuxize.com/post/how-to-install-anaconda-on-ubuntu-18-04/
 
 Conda
 4.5.11 (2018-08-21)
 Conda is an open source package management system and environment management system
-https://conda.io/docs/release-notes.html#id1
-https://conda.io/docs/index.html
+- https://conda.io/docs/release-notes.html#id1
+- https://conda.io/docs/index.html
 
 
 distribution
 Anaconda 5.2.0 (May 30, 2018)
-https://docs.anaconda.com/anaconda/reference/release-notes/
-https://www.anaconda.com/blog/developer-blog/anaconda-distribution-5-2/
+- https://docs.anaconda.com/anaconda/reference/release-notes/
+- https://www.anaconda.com/blog/developer-blog/anaconda-distribution-5-2/
 
 
 ## Conda Env Roll Back 
@@ -249,9 +249,9 @@ Use  `conda list --revisions` to see available revisions and  `conda install --r
     conda install --revision 0 
 ~~~
 
-https://anaconda.org/intel/repo?sort=_name&sort_order=asc
-http://blog.rtwilson.com/conda-revisions-letting-you-rollback-to-a-previous-version-of-your-environment/
-https://github.com/conda-forge/basemap-feedstock/issues/30
+- https://anaconda.org/intel/repo?sort=_name&sort_order=asc
+- http://blog.rtwilson.com/conda-revisions-letting-you-rollback-to-a-previous-version-of-your-environment/
+- https://github.com/conda-forge/basemap-feedstock/issues/30
 
 
 ## Update Note
