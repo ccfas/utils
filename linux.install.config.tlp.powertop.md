@@ -1,8 +1,8 @@
 
 # How to set Linux Power Managment Settings 
 
-Author: Carlos Felipe C. Alves
-email: carlos.fas@gmail.com
+- Author: Carlos Felipe C. Alves
+- email: carlos.fas@gmail.com
 
 ## GENERAL COMMENTS
 
