@@ -144,11 +144,11 @@ Revert change with:
 
 ## References
 
-https://www.youtube.com/watch?v=Ku0491LfhR4
-https://www.youtube.com/watch?v=RWyOn1ThEnc
-https://petermolnar.net/hard-drive-spindown-clicking-noise/
-https://www.reddit.com/r/linuxquestions/comments/71ozjm/is_it_safe_to_increase_ssd_apm_level_to_254/
-https://askubuntu.com/questions/805627/which-is-more-effective-tlp-or-cpufreq
-https://mintguide.org/tools/484-install-tlp-linux-advanced-power-management-for-laptops.html
+- https://www.youtube.com/watch?v=Ku0491LfhR4
+- https://www.youtube.com/watch?v=RWyOn1ThEnc
+- https://petermolnar.net/hard-drive-spindown-clicking-noise/
+- https://www.reddit.com/r/linuxquestions/comments/71ozjm/is_it_safe_to_increase_ssd_apm_level_to_254/
+- https://askubuntu.com/questions/805627/which-is-more-effective-tlp-or-cpufreq
+- https://mintguide.org/tools/484-install-tlp-linux-advanced-power-management-for-laptops.html
 
 
